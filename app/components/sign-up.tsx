@@ -26,8 +26,8 @@ export default function SignUp() {
     openModal();
   }
   return (
-    <div className="rounded-xl bg-white  grid-cols-2 grid max-w-3xl ">
-      <div className="flex flex-col  gap-6 col-start-1 col-span-1 m-5 pl-5 pt-10 pb-10">
+    <div className="rounded-xl bg-white grid-cols-1 grid-rows-2  sm:grid-cols-2 sm:grid-rows-1 grid max-w-3xl max-h-screen  ">
+      <div className="flex flex-col gap:2 sm:gap-6 sm:col-start-1 sm:col-span-1 m-5 sm:pl-5 sm:pt-10 sm:pb-10 row-start-2 row-span-1">
         <Heading>Stay updated!</Heading>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
         <ul className="flex flex-col gap-2">
@@ -62,7 +62,7 @@ export default function SignUp() {
           Subscribe to monthly newsletter
         </Button>
       </div>
-      <div className="relative m-5 rounded-lg">
+      <div className="relative m-5 rounded-lg sm:col-start-2 sm:col-span-1 row-start-1 row-span-1 sm:row-start-2">
         <Image
           src={signUpImage}
           alt="image"
